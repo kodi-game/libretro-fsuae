@@ -23,6 +23,7 @@ const char DlgFileSelect_fileid[] = "Hatari dlgFileSelect.c : " __DATE__ " " __T
 #include "zip.h"
 #include "dialog.h"
 #include "libretro-mapper.h"
+#include "gui-common.h"
 
 //RETRO
 extern int alphasort2(const struct dirent **d1, const struct dirent **d2);
@@ -249,7 +250,6 @@ static void DlgFileSelect_ScrollDown(void)
 }
 
 //RETRO
-extern int gmx,gmy;
 
 /*-----------------------------------------------------------------------*/
 /**

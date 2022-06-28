@@ -21,6 +21,7 @@
 #include "fs-uae/paths.h"
 #include "sources/src/include/uae_types.h"
 #include "sources/src/include/uae_memory.h"
+#include "../gui-retro/gui-common.h"
 
 cothread_t mainThread;
 cothread_t emuThread;
