@@ -21,6 +21,7 @@ const char SDLGui_fileid[] = "Hatari sdlgui.c : " __DATE__ " " __TIME__;
 #include "utype.h"
 #include "graph.h"
 #include "../libretro/libretro-glue.h"
+#include "gui-common.h"
 
 typedef struct{
      int16_t x, y;
@@ -608,7 +609,6 @@ static int SDLGui_SearchFlaggedButton(const SGOBJ *dlg, int flag)
 #endif
 
 extern int touch;
-int gmx,gmy;
 int okold=0,boutc=0;
 
 /*-----------------------------------------------------------------------*/

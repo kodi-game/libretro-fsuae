@@ -11,6 +11,7 @@
 #include "custom.h"
 #include "drawing.h"
 #include "../retrodep/retroglue.h"
+#include "../gui-retro/gui-common.h"
 
 #ifdef __CELLOS_LV2__
 #include "sys/sys_time.h"
@@ -33,7 +34,6 @@ void gettimeofday (struct timeval *tv, void *blah)
 #include <time.h>
 #endif
 
-unsigned short int bmp[1024*1024];
 unsigned short int savebmp[1024*1024];
 
 int NPAGE=-1, KCOL=1, BKGCOLOR=0, MAXPAS=6;

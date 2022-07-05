@@ -64,7 +64,6 @@ extern unsigned short int  bmp[1024*1024];
 extern short signed int SNDBUF[1024*2];
 extern int  sndbufpos;
 
-int pause_emulation;
 int prefs_changed = 0;
 
 int vsync_enabled = 0;

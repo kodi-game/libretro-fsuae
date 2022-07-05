@@ -6,9 +6,7 @@
 #include <stdlib.h>
 #include <assert.h>
 #include <string.h>
-
-extern unsigned short int bmp[1024*1024];
-extern unsigned short int savebmp[1024*1024];
+#include "gui-common.h"
 
 typedef unsigned  short int  PIXEL;
 
