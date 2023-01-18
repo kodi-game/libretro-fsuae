@@ -739,7 +739,7 @@ static int default_config;
 
 void uae_reset (int hardreset, int keyboardreset)
 {
-	if (debug_dma) {
+	if (false) {
 		record_dma_reset ();
 		record_dma_reset ();
 	}
