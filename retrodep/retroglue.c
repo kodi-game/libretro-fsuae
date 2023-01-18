@@ -28,6 +28,7 @@
 #include "libretro-mapper.h"
 
 #include "../sources/src/od-win32/dxwrap.h"
+#include "../sources/src/include/picasso96.h"
 
 #undef DEBUG
 #define DEBUG
