@@ -14,7 +14,7 @@
 #include "uae_slirp.h"
 
 #ifndef HAVE_INET_ATON
-static int inet_aton(const char *cp, struct in_addr *ia)
+int inet_aton(const char *cp, struct in_addr *ia)
 {
 	uint32_t addr = inet_addr(cp);
 	if (addr == 0xffffffff)
