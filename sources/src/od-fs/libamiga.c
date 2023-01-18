@@ -27,6 +27,8 @@
 #include "uae_memory.h"
 #include "od-fs/target.h"
 
+#include <config.h>
+
 void keyboard_settrans (void);
 libamiga_callbacks g_libamiga_callbacks = {};
 log_function g_amiga_gui_message_function = NULL;

@@ -27,6 +27,8 @@
 
 #include "ml_internal.h"
 
+#include <config.h>
+
 int g_fs_ml_benchmarking = 0;
 
 int g_fs_ml_video_width = 0;

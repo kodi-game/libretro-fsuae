@@ -23,6 +23,8 @@
 #include "libfsemu.h"
 #include "video.h"
 
+#include <config.h>
+
 static char *g_controllers_dir = NULL;
 
 void fs_emu_set_controllers_dir(const char *path)
