@@ -1,6 +1,6 @@
 
 PLATFLAGS :=
-USE_JIT    = 0
+USE_JIT    = 1
 USE_NEON   = 0
 DEBUG=0
 PROFILE=0
