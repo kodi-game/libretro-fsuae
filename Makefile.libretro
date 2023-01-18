@@ -170,7 +170,6 @@ gen:
 	(unset ARCH; cd sources; mkdir -p gen)
 	(unset ARCH; cd sources; make gen/build68k gen/genblitter gen/gencomp gen/gencpu gen/genlinetoscr)
 	(unset ARCH; cd sources; make gen/cpudefs.c gen/comptbl.h gen/compemu.c gen/linetoscr.c gen/cpuemu_0.c gen/blit.h gen/blitfunc.c gen/blitfunc.h gen/blittable.c )
-	(make clean)
 
 clean_gen:
 	rm -f sources/gen/{*.h,*.c,build68k,genblitter,gencomp,gencpu,genlinetoscr}
