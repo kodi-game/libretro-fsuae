@@ -20,6 +20,7 @@
 #include "uae_log.h"
 #include "gui.h"
 
+#include <fcntl.h>
 #include <linux/cdrom.h>
 #include <sys/ioctl.h>
 

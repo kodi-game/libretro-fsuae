@@ -76,6 +76,8 @@
 #include "od-fs/target.h"
 #endif
 
+#include <fcntl.h>
+
 #define TRACING_ENABLED 1
 int log_filesys = 0;
 

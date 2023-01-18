@@ -20,6 +20,8 @@
 #include "fsdb_host.h"
 #include "uae_log.h"
 
+#include <fcntl.h>
+
 int g_fsdb_debug = 0;
 
 struct my_opendir_s {

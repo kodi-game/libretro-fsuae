@@ -35,6 +35,8 @@
 #include "native2amiga.h"
 #include "bsdsocket.h"
 
+#include <fcntl.h>
+
 #ifndef BSDSOCKET
 
 volatile int bsd_int_requested;

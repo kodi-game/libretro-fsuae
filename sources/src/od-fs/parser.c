@@ -65,6 +65,8 @@
 
 #include "uae_socket.h"
 
+#include <fcntl.h>
+
 #if !defined B300 || !defined B1200 || !defined B2400 || !defined B4800 || !defined B9600
 #undef POSIX_SERIAL
 #endif
