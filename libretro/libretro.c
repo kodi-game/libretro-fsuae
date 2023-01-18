@@ -573,7 +573,7 @@ void retro_get_system_info(struct retro_system_info *info)
 {
    memset(info, 0, sizeof(*info));
    info->library_name     = "";
-   info->library_version  = PACKAGE_STRING;
+   info->library_version  = "1.0.0";
    info->need_fullpath    = true;
    info->block_extract    = false;	
    info->valid_extensions = "adf|dms|fdi|ipf|zip|uae";
