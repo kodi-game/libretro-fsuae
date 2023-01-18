@@ -96,7 +96,7 @@
 */
 
 #ifdef FSUAE // NL
-char *ua (const char *s) {
+char *ua_gencomp (const char *s) {
 	return strdup(s);
 }
 #endif
@@ -3192,7 +3192,7 @@ static char *outopcode (int opcode)
 			break;
 	}
 	{
-		char *s = ua (lookuptab[i].name);
+		char *s = ua_gencomp (lookuptab[i].name);
 		strcpy (out, s);
 		xfree (s);
 	}
@@ -3366,7 +3366,7 @@ generate_one_opcode (int rp, int noflags)
 #endif
 	comprintf ("}\n");
 
-	char *name = ua (lookuptab[i].name);
+	char *name = ua_gencomp (lookuptab[i].name);
 	if (aborted) {
 	    fprintf (stblfile, "{ NULL, %u, %s }, /* %s */\n", opcode, flags, name);
 	    com_discard();
