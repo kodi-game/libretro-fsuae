@@ -137,6 +137,13 @@ OBJECTS += $(SOURCES_C:.c=.o) $(SOURCES_CXX:.cpp=.o) $(SOURCES_ASM:.S=.o)
 
 INCDIRS := $(EXTRA_INCLUDES) $(INCFLAGS)
 
+# Enable position independent code
+CFLAGS += -fPIC
+
+# TODO: Parse these from the Makefile that is generated via ./configure
+CFLAGS += -pthread -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+LDFLAGS += -lgthread-2.0 -pthread -lglib-2.0
+
 all: $(TARGET)
 
 $(TARGET): $(OBJECTS) 
