@@ -157,7 +157,11 @@ AC_SUBST([FREETYPE_LIBS])
 AC_CHECK_LIB([gdi32], [main])
 
 AC_DEFINE([USE_GLIB], [1], [Define to 1 to use GLib])
-PKG_CHECK_MODULES([GLIB], [glib-2.0 >= 2.32 gthread-2.0])
+PKG_CHECK_MODULES([GLIB], [glib-2.0 >= 2.32 gthread-2.0], [
+], [
+    AC_SUBST([GLIB_CFLAGS])
+    AC_SUBST([GLIB_LIBS])
+])
 
 AC_CHECK_LIB([Iphlpapi], [main])
 
@@ -708,4 +712,6 @@ echo "  OS_CPPFLAGS:       $OS_CPPFLAGS"
 echo "  OS_LDFLAGS:        $OS_LDFLAGS"
 echo "  SDL2_CFLAGS:       $SDL2_CFLAGS"
 echo "  SDL2_LIBS:         $SDL2_LIBS"
+echo "  GLIB_CFLAGS:       $GLIB_CFLAGS"
+echo "  GLIB_LIBS:         $GLIB_LIBS"
 echo ""
