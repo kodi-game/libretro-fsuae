@@ -27,6 +27,8 @@
 #include "libretro-glue.h"
 #include "libretro-mapper.h"
 
+#include "../sources/src/od-win32/dxwrap.h"
+
 #undef DEBUG
 #define DEBUG
 
